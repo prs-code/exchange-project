@@ -1,0 +1,74 @@
+* {
+    font-family: "Yekan";
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftSide {
+    width: 50%;
+    height: 100vh;
+    background-color: blue;
+    color: #fff;
+    border: 2px solid lightgray;
+    outline: 2px solid lightgray;
+    font-size: 3rem;
+    text-align: center;
+    pointer-events: none;
+    transition: all 1s ease;
+}
+.rightSide {
+    width: 50%;
+    height: 100vh;
+    background-color: green;
+    color: #fff;
+    border: 2px solid lightgray;
+    outline: 2px solid lightgray;
+    font-size: 3rem;
+    text-align: center;
+    pointer-events: none;
+    transition: all 1s ease;
+}
+.leftSide a{
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 35px;
+    margin-top: 50px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.rightSide a{
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 35px;
+    margin-top: 50px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.leftSide:hover {
+        width: 90%;
+}
+.rightSide:hover {
+    width: 90%;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .leftSide {
+        width: 100%;
+        height: 50vh;
+    }
+    .rightSide {
+        width: 100%;
+        height: 50vh;
+    }
+}
