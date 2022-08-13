@@ -33,7 +33,7 @@ const Coins = () => {
         {!coins.length ? (
           <div>
             <img src={loader} alt="loader" />
-            <h1>... Loading</h1>
+            <h1>Loading ...</h1>
           </div>
         ) : (
           searchedCoin.map((coin) => ( 
